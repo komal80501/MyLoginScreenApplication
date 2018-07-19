@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:textSize="35dp"
+        android:layout_gravity="top|center"
+        android:paddingBottom="20dp"
+        android:textStyle="bold|italic"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="top|center" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUsername"
+        android:hint="Enter User Name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPassword"
+        android:hint="Enter Password"
+        android:inputType="textPassword"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="10">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Attempts Lefts:"
+        android:textSize="25sp"
+        android:id="@+id/attempts"
+        android:textStyle="bold"
+        android:layout_weight="5"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Counter"
+        android:textSize="25sp"
+        android:id="@+id/textViewCounter"
+        android:layout_toRightOf="@+id/attempts"
+        android:gravity="center"
+        android:layout_weight="5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="10">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:text="Login" android:layout_weight="5"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancel"
+        android:text="Cancel"
+        android:layout_weight="5" />
+    </LinearLayout>
+
+</LinearLayout>
